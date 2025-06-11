@@ -26,8 +26,8 @@ SECRET_KEY = 'django-insecure-s1g4e*l%^+r8u3o5)@w7$q8m0l-)s^z)b%0k%1ijl)%&1s8iv&
 DEBUG = False
 
 
-ALLOWED_HOSTS = ['127.0.0.1', '.vercel.app']
-#ALLOWED_HOSTS = ['*']
+#ALLOWED_HOSTS = ['127.0.0.1', '.vercel.app']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -44,7 +44,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',
+    #'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -70,8 +70,8 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'newspaper_project.wsgi.application'
-#WSGI_APPLICATION = 'newspaper_project.wsgi.app'
+#WSGI_APPLICATION = 'newspaper_project.wsgi.application'
+WSGI_APPLICATION = 'newspaper_project.wsgi.app'
 
 
 # Database
